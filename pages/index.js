@@ -2,11 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import React, { useState } from "react";
-
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
 export default function Home() {
   const [index, setIndex] = useState(0);
-
+  const { t } = useTranslation("common");
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -66,13 +67,21 @@ export default function Home() {
       <Container>
         <Row>
           <Col>
-            <div>one</div>
+            <div>{t("one")}</div>
           </Col>
           <Col>
-            <div>Two</div>
+            <div>{t("two")}</div>
+          </Col>
+          <Col>
+            <div>{t("three")}</div>
           </Col>
         </Row>
       </Container>
     </div>
   );
 }
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common", "footer"])),
+  },
+});
