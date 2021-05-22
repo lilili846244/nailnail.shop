@@ -124,7 +124,7 @@ export default function Home() {
             <div class="item-1">
               <Link href="/products">
                 <Image
-                  src="http://nailnail.shop/img/banner/1.jpg"
+                  src="http://nailnail.shop/img/product/1.png"
                   alt="product"
                   width="266px"
                   height="310px"
@@ -160,7 +160,7 @@ export default function Home() {
             <div class="item-2">
               <Link href="/products">
                 <Image
-                  src="http://nailnail.shop/img/banner/1.jpg"
+                  src="http://nailnail.shop/img/product/2.png"
                   alt="product"
                   width="266px"
                   height="310px"
@@ -196,7 +196,7 @@ export default function Home() {
             <div class="item-3">
               <Link href="/products">
                 <Image
-                  src="http://nailnail.shop/img/banner/1.jpg"
+                  src="http://nailnail.shop/img/product/6.png"
                   alt="product"
                   width="266px"
                   height="310px"
@@ -232,7 +232,7 @@ export default function Home() {
             <div class="item-4">
               <Link href="/products">
                 <Image
-                  src="http://nailnail.shop/img/banner/1.jpg"
+                  src="http://nailnail.shop/img/product/9.png"
                   alt="product"
                   width="266px"
                   height="310px"
@@ -272,7 +272,7 @@ export default function Home() {
         <div class="up">
           <Container>
             <Image
-              src="http://nailnail.shop/img/banner/2.jpg"
+              src="http://nailnail.shop/img/banner/6.png"
               alt="product"
               width="571px"
               height="510px"
@@ -307,6 +307,7 @@ export default function Home() {
             </Row>
           </Col>
         </div>
+
         <div class="down">
           <Col>
             <Row>
@@ -338,7 +339,7 @@ export default function Home() {
           </Col>
           <Container>
             <Image
-              src="http://nailnail.shop/img/banner/2.jpg"
+              src="http://nailnail.shop/img/banner/5.png"
               alt="product"
               width="571px"
               height="510px"
