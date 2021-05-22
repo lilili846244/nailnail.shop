@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav.Link href="/">{t("Home")}</Nav.Link>
               <Nav.Link href="/about">{t("About Us")}</Nav.Link>
-              <Nav.Link href="/pricing">{t("Pricing")}</Nav.Link>
+              <Nav.Link href="/products">{t("Products")}</Nav.Link>
 
               <Nav.Link href="/kits">{t("Kits")}</Nav.Link>
               <Nav.Link href="/news">{t("News")}</Nav.Link>

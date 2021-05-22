@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
@@ -77,6 +78,274 @@ export default function Home() {
           </Col>
         </Row>
       </Container>
+
+      <Container>
+        <div class="box">
+          <div class="left-box">
+            <Link href="/products">
+              <Image
+                src="http://nailnail.shop/img/banner/1.jpg"
+                alt="product"
+                href="/products"
+                width="570px"
+                height="334px"
+              />
+            </Link>
+          </div>
+
+          <div class="rigth-box">
+            <Link href="/products">
+              <Image
+                src="http://nailnail.shop/img/banner/2.jpg"
+                alt="product"
+                href="/products"
+                width="570px"
+                height="334px"
+              />
+            </Link>
+          </div>
+        </div>
+      </Container>
+
+      <Container>
+        <Row>
+          <Col>
+            <h1>New Arrivals</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+
+      <Col>
+        <Carousel>
+          <div class="item-1-4">
+            <div class="item-1">
+              <Link href="/products">
+                <Image
+                  src="http://nailnail.shop/img/banner/1.jpg"
+                  alt="product"
+                  width="266px"
+                  height="310px"
+                />
+              </Link>
+              <div class="product-badge">
+                <ul>
+                  <li class="sale-badge">New</li>
+                </ul>
+              </div>
+
+              <div class="product-hover-action">
+                <ul>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item-2">
+              <Link href="/products">
+                <Image
+                  src="http://nailnail.shop/img/banner/1.jpg"
+                  alt="product"
+                  width="266px"
+                  height="310px"
+                />
+              </Link>
+              <div class="product-badge">
+                <ul>
+                  <li class="sale-badge">New</li>
+                </ul>
+              </div>
+
+              <div class="product-hover-action">
+                <ul>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item-3">
+              <Link href="/products">
+                <Image
+                  src="http://nailnail.shop/img/banner/1.jpg"
+                  alt="product"
+                  width="266px"
+                  height="310px"
+                />
+              </Link>
+              <div class="product-badge">
+                <ul>
+                  <li class="sale-badge">New</li>
+                </ul>
+              </div>
+
+              <div class="product-hover-action">
+                <ul>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="item-4">
+              <Link href="/products">
+                <Image
+                  src="http://nailnail.shop/img/banner/1.jpg"
+                  alt="product"
+                  width="266px"
+                  height="310px"
+                />
+              </Link>
+              <div class="product-badge">
+                <ul>
+                  <li class="sale-badge">New</li>
+                </ul>
+              </div>
+
+              <div class="product-hover-action">
+                <ul>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/products">
+                      <a>*</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Carousel>
+      </Col>
+
+      <div class="home-about-us-area">
+        <div class="up">
+          <Container>
+            <Image
+              src="http://nailnail.shop/img/banner/2.jpg"
+              alt="product"
+              width="571px"
+              height="510px"
+            />
+          </Container>
+          <Col>
+            <Row>
+              <h4>Upto 40% off</h4>
+            </Row>
+            <Row>
+              <h1>Beard Oil and Cream</h1>
+            </Row>
+            <Row>
+              <p>
+                Colognes contain approximately 3-5% oil diluted in 80-90%
+                alcohol, with water making up about 10%.
+              </p>
+            </Row>
+            <Row>
+              <div class="btn-wrapper">
+                <Col>
+                  <Link href="/products">
+                    <a>Shop Now</a>
+                  </Link>
+                </Col>
+                <Col>
+                  <Link href="/products">
+                    <a>View More</a>
+                  </Link>
+                </Col>
+              </div>
+            </Row>
+          </Col>
+        </div>
+        <div class="down">
+          <Col>
+            <Row>
+              <h4>Upto 30% off</h4>
+            </Row>
+            <Row>
+              <h1>Oak Oil and Cream</h1>
+            </Row>
+            <Row>
+              <p>
+                Colognes contain approximately 3-5% oil diluted in 80-90%
+                alcohol, with water making up about 10%.
+              </p>
+            </Row>
+            <Row>
+              <div class="btn-wrapper">
+                <Col>
+                  <Link href="/products">
+                    <a>Shop Now</a>
+                  </Link>
+                </Col>
+                <Col>
+                  <Link href="/products">
+                    <a>View More</a>
+                  </Link>
+                </Col>
+              </div>
+            </Row>
+          </Col>
+          <Container>
+            <Image
+              src="http://nailnail.shop/img/banner/2.jpg"
+              alt="product"
+              width="571px"
+              height="510px"
+            />
+          </Container>
+        </div>
+      </div>
     </div>
   );
 }
