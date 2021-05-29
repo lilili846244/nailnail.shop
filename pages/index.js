@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Carousel, Container, Row, Col } from "react-bootstrap";
+import { GoBook } from "react-icons/go";
 export default function Home() {
   const [index, setIndex] = useState(0);
   const { t } = useTranslation("common");
@@ -65,57 +66,76 @@ export default function Home() {
         })}
       </Carousel>
 
-      <Container>
-        <Row>
-          <Col>
-            <div>{t("one")}</div>
+      <Container className="ltn-feature-col">
+        <Row
+          style={{
+            position: "relative",
+            top: -30,
+            zIndex: 10,
+            background: "#fff",
+            boxShadow: "0px 10px 20px rgba(0,0,0,0.3)",
+          }}
+        >
+          <Col className="ltn-feature">
+            <Col>
+              <GoBook className="icon" />
+            </Col>
+
+            <Col className="home_feature">
+              <h4>Oredr Online</h4>
+              <p>Free Shipping on Order Over $100</p>
+            </Col>
           </Col>
-          <Col>
-            <div>{t("two")}</div>
+
+          <Col className="ltn-feature">
+            <Col>
+              <GoBook className="icon" />
+            </Col>
+
+            <Col className="home_feature">
+              <h4>Worldwide Shipping</h4>
+              <p>24/7 h Customer Support</p>
+            </Col>
           </Col>
-          <Col>
-            <div>{t("three")}</div>
+          <Col className="ltn-feature">
+            <Col>
+              <GoBook className="icon" />
+            </Col>
+
+            <Col className="home_feature">
+              <h4>Payment System</h4>
+              <p>Secure Payment System</p>
+            </Col>
           </Col>
         </Row>
       </Container>
 
       <Container>
-        <div class="box">
-          <div class="left-box">
-            <Link href="/products">
-              <Image
-                src="http://nailnail.shop/img/banner/1.jpg"
-                alt="product"
-                href="/products"
-                width="570px"
-                height="334px"
-              />
-            </Link>
-          </div>
+        <Row>
+          <Col>
+            <Image
+              src="/image/home_left.jpg"
+              width={600}
+              height={353}
+              layout="responsive"
+            />
+          </Col>
+          <Col>
+            <Image
+              src="/image/home_right.jpg"
+              width={600}
+              height={353}
+              layout="responsive"
+            />
+          </Col>
+        </Row>
+      </Container>
 
-          <div class="rigth-box">
-            <Link href="/products">
-              <Image
-                src="http://nailnail.shop/img/banner/2.jpg"
-                alt="product"
-                href="/products"
-                width="570px"
-                height="334px"
-              />
-            </Link>
-          </div>
+      <Container className="pt-5">
+        <div className="center">
+          <h1>New Arrivals</h1>
+          <p>There are many variations of Lorem Ipsum available</p>
         </div>
-      </Container>
-
-      <Container>
-        <Row>
-          <Col>
-            <h1>New Arrivals</h1>
-            <p>
-              There are many variations of passages of Lorem Ipsum available.
-            </p>
-          </Col>
-        </Row>
       </Container>
 
       <Col>
