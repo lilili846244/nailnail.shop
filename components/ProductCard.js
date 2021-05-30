@@ -12,7 +12,7 @@ export const ProductCard = () => {
   const [isHover, setIsHover] = useState(false);
   return (
     <div
-      className={style.ProductCard}
+      className={style.productCard}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >

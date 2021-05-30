@@ -20,7 +20,7 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 5px 10px #999;
     animation-name: top2Center;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
 }
 
 @keyframes top2Center {

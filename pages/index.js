@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 
 import React, { useState } from "react";
-import { Carousel, Container, Row, Col } from "react-bootstrap";
+import { Carousel, Button, Container, Row, Col } from "react-bootstrap";
 
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -84,7 +84,7 @@ export default function Home() {
         <Row>
           <Col>
             <Col>
-              <GoBook className="icon" />
+              <GoBook />
             </Col>
 
             <Col className="home_feature">
@@ -94,8 +94,8 @@ export default function Home() {
           </Col>
 
           <Col className="ltn-feature">
-            <Col>
-              <GoBook className="icon" />
+            <Col className="icon">
+              <GoBook />
             </Col>
             <Col className="home_feature">
               <h4>Worldwide Shipping</h4>
@@ -104,8 +104,8 @@ export default function Home() {
           </Col>
 
           <Col className="ltn-feature">
-            <Col>
-              <GoBook className="icon" />
+            <Col className="icon">
+              <GoBook />
             </Col>
             <Col className="home_feature">
               <h4>Payment System</h4>
@@ -147,84 +147,54 @@ export default function Home() {
         <MulitCarousel />
       </Container>
 
-      <div class="home-about-us-area">
-        <div class="up">
-          <Container>
-            <Image
-              src="http://nailnail.shop/img/banner/6.png"
-              alt="product"
-              width="571px"
-              height="510px"
-            />
-          </Container>
-          <Col>
-            <Row>
-              <h4>Upto 40% off</h4>
-            </Row>
-            <Row>
-              <h1>Beard Oil and Cream</h1>
-            </Row>
-            <Row>
-              <p>
-                Colognes contain approximately 3-5% oil diluted in 80-90%
-                alcohol, with water making up about 10%.
-              </p>
-            </Row>
-            <Row>
-              <div class="btn-wrapper">
-                <Col>
-                  <Link href="/products">
-                    <a>Shop Now</a>
-                  </Link>
-                </Col>
-                <Col>
-                  <Link href="/products">
-                    <a>View More</a>
-                  </Link>
-                </Col>
-              </div>
-            </Row>
-          </Col>
-        </div>
+      <div style={{ background: "#fcf2e8", padding: "5rem 0" }}>
+        <Container>
+          <Row>
+            <Col>
+              <Image
+                src="http://nailnail.shop/img/banner/6.png"
+                layout="responsive"
+                width="600px"
+                height="537px"
+              />
+            </Col>
 
-        <div class="down">
-          <Col>
-            <Row>
-              <h4>Upto 30% off</h4>
-            </Row>
-            <Row>
-              <h1>Oak Oil and Cream</h1>
-            </Row>
-            <Row>
+            <Col style={{ margin: "auto", padding: "0 50px" }}>
+              <h4>Upto 40% off</h4>
+              <h1>Beard Oil and Cream</h1>
               <p>
                 Colognes contain approximately 3-5% oil diluted in 80-90%
                 alcohol, with water making up about 10%.
               </p>
-            </Row>
-            <Row>
-              <div class="btn-wrapper">
-                <Col>
-                  <Link href="/products">
-                    <a>Shop Now</a>
-                  </Link>
-                </Col>
-                <Col>
-                  <Link href="/products">
-                    <a>View More</a>
-                  </Link>
-                </Col>
-              </div>
-            </Row>
-          </Col>
-          <Container>
-            <Image
-              src="http://nailnail.shop/img/banner/5.png"
-              alt="product"
-              width="571px"
-              height="510px"
-            />
-          </Container>
-        </div>
+
+              <Button variant="outline-primary">Shop Now</Button>
+              <Button variant="outline-primary">View More</Button>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col style={{ margin: "auto", padding: "0 50px" }}>
+              <h4>Upto 30% off</h4>
+              <h1>Oak Oil and Cream</h1>
+              <p>
+                Colognes contain approximately 3-5% oil diluted in 80-90%
+                alcohol, with water making up about 10%.
+              </p>
+
+              <Button variant="outline-primary">Shop Now</Button>
+              <Button variant="outline-primary">View More</Button>
+            </Col>
+
+            <Col>
+              <Image
+                src="http://nailnail.shop/img/banner/6.png"
+                layout="responsive"
+                width="600px"
+                height="537px"
+              />
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );
