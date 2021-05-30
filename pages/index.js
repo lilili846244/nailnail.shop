@@ -1,12 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
+
 import React, { useState } from "react";
+import { Carousel, Container, Row, Col } from "react-bootstrap";
+
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Carousel, Container, Row, Col } from "react-bootstrap";
+
+import "react-multi-carousel/lib/styles.css";
+import { MulitCarousel } from "../components/MultiProductCarousel";
+
 import { GoBook } from "react-icons/go";
+import Link from "next/link";
+
 export default function Home() {
   const [index, setIndex] = useState(0);
   const { t } = useTranslation("common");
@@ -66,17 +72,17 @@ export default function Home() {
         })}
       </Carousel>
 
-      <Container className="ltn-feature-col">
-        <Row
-          style={{
-            position: "relative",
-            top: -30,
-            zIndex: 10,
-            background: "#fff",
-            boxShadow: "0px 10px 20px rgba(0,0,0,0.3)",
-          }}
-        >
-          <Col className="ltn-feature">
+      <Container
+        style={{
+          position: "relative",
+          top: -30,
+          zIndex: 10,
+          background: "#fff",
+          boxShadow: "0px 10px 20px rgba(0,0,0,0.3)",
+        }}
+      >
+        <Row>
+          <Col>
             <Col>
               <GoBook className="icon" />
             </Col>
@@ -91,17 +97,16 @@ export default function Home() {
             <Col>
               <GoBook className="icon" />
             </Col>
-
             <Col className="home_feature">
               <h4>Worldwide Shipping</h4>
               <p>24/7 h Customer Support</p>
             </Col>
           </Col>
+
           <Col className="ltn-feature">
             <Col>
               <GoBook className="icon" />
             </Col>
-
             <Col className="home_feature">
               <h4>Payment System</h4>
               <p>Secure Payment System</p>
@@ -110,7 +115,7 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container>
+      <Container className="pt-5">
         <Row>
           <Col>
             <Image
@@ -138,155 +143,9 @@ export default function Home() {
         </div>
       </Container>
 
-      <Col>
-        <Carousel>
-          <div class="item-1-4">
-            <div class="item-1">
-              <Link href="/products">
-                <Image
-                  src="http://nailnail.shop/img/product/1.png"
-                  alt="product"
-                  width="266px"
-                  height="310px"
-                />
-              </Link>
-              <div class="product-badge">
-                <ul>
-                  <li class="sale-badge">New</li>
-                </ul>
-              </div>
-
-              <div class="product-hover-action">
-                <ul>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item-2">
-              <Link href="/products">
-                <Image
-                  src="http://nailnail.shop/img/product/2.png"
-                  alt="product"
-                  width="266px"
-                  height="310px"
-                />
-              </Link>
-              <div class="product-badge">
-                <ul>
-                  <li class="sale-badge">New</li>
-                </ul>
-              </div>
-
-              <div class="product-hover-action">
-                <ul>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item-3">
-              <Link href="/products">
-                <Image
-                  src="http://nailnail.shop/img/product/6.png"
-                  alt="product"
-                  width="266px"
-                  height="310px"
-                />
-              </Link>
-              <div class="product-badge">
-                <ul>
-                  <li class="sale-badge">New</li>
-                </ul>
-              </div>
-
-              <div class="product-hover-action">
-                <ul>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="item-4">
-              <Link href="/products">
-                <Image
-                  src="http://nailnail.shop/img/product/9.png"
-                  alt="product"
-                  width="266px"
-                  height="310px"
-                />
-              </Link>
-              <div class="product-badge">
-                <ul>
-                  <li class="sale-badge">New</li>
-                </ul>
-              </div>
-
-              <div class="product-hover-action">
-                <ul>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/products">
-                      <a>*</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </Carousel>
-      </Col>
+      <Container>
+        <MulitCarousel />
+      </Container>
 
       <div class="home-about-us-area">
         <div class="up">
