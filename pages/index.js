@@ -13,6 +13,8 @@ import { MulitCarousel } from "../components/MultiProductCarousel";
 import { GoBook } from "react-icons/go";
 import Link from "next/link";
 
+import { ProductCard } from "../components/ProductCard";
+
 export default function Home() {
   const [index, setIndex] = useState(0);
   const { t } = useTranslation("common");
@@ -196,6 +198,63 @@ export default function Home() {
           </Row>
         </Container>
       </div>
+      <Container className="pt-5">
+        <div className="center">
+          <h1>Popular Products</h1>
+          <p>There are many variations of Lorem Ipsum available</p>
+        </div>
+      </Container>
+
+      <Container>
+        <Row>
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+          <Col>
+            <ProductCard />
+          </Col>
+        </Row>
+      </Container>
+
+      <Container fluid>
+        <Image
+          src="http://nailnail.shop/img/banner/6.png"
+          layout="responsive"
+          width="1583"
+          height="447"
+        />
+      </Container>
+
+      <Container className="pt-5">
+        <div className="center">
+          <h1>Latest Blog</h1>
+          <p>There are many variations of Lorem Ipsum available</p>
+        </div>
+      </Container>
+
+      <Container>
+        <MulitCarousel />
+      </Container>
     </div>
   );
 }
