@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import { GoBook } from "react-icons/go";
 
 import React, { Component } from "react";
-import YouTube from "react-youtube";
+import { Youtube } from "../components/ReactYouTubeExample";
 
-import React, { useState } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
 
 export default function About() {
@@ -48,6 +48,103 @@ export default function About() {
               width="600px"
               height="537px"
             />
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+        <div
+          style={{ background: "#fcf2e8", width: "1260px", height: "864px" }}
+        ></div>
+      </Container>
+
+      <Row>
+        <Col>
+          <Image
+            src="http://nailnail.shop/img/brand-logo/1.png"
+            width={83}
+            height={82}
+            layout="responsive"
+          />
+        </Col>
+        <Col>
+          <Image
+            src="http://nailnail.shop/img/brand-logo/2.png"
+            width={83}
+            height={82}
+            layout="responsive"
+          />
+        </Col>
+        <Col>
+          <Image
+            src="http://nailnail.shop/img/brand-logo/3.png"
+            width={83}
+            height={82}
+            layout="responsive"
+          />
+        </Col>
+        <Col>
+          <Image
+            src="http://nailnail.shop/img/brand-logo/4.png"
+            width={83}
+            height={82}
+            layout="responsive"
+          />
+        </Col>
+        <Col>
+          <Image
+            src="http://nailnail.shop/img/brand-logo/5.png"
+            width={83}
+            height={82}
+            layout="responsive"
+          />
+        </Col>
+      </Row>
+
+      <Container
+        style={{
+          background: "#fff",
+          boxShadow: "0px 10px 20px rgba(0,0,0,0.3)",
+        }}
+      >
+        <Row>
+          <Col>
+            <Col>
+              <GoBook />
+            </Col>
+
+            <Col className="home_feature">
+              <h4>Oredr Online</h4>
+              <p>Free Shipping on Order Over $100</p>
+            </Col>
+          </Col>
+
+          <Col className="ltn-feature">
+            <Col className="icon">
+              <GoBook />
+            </Col>
+            <Col className="home_feature">
+              <h4>Worldwide Shipping</h4>
+              <p>24/7 h Customer Support</p>
+            </Col>
+          </Col>
+          <Col className="ltn-feature">
+            <Col className="icon">
+              <GoBook />
+            </Col>
+            <Col className="home_feature">
+              <h4>Worldwide Shipping</h4>
+              <p>24/7 h Customer Support</p>
+            </Col>
+          </Col>
+
+          <Col className="ltn-feature">
+            <Col className="icon">
+              <GoBook />
+            </Col>
+            <Col className="home_feature">
+              <h4>Payment System</h4>
+              <p>Secure Payment System</p>
+            </Col>
           </Col>
         </Row>
       </Container>
