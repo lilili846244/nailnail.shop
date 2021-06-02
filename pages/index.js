@@ -252,9 +252,7 @@ export default function Home() {
         </div>
       </Container>
 
-      <Container>
-        <ElasticCarousel />
-      </Container>
+      <Container></Container>
     </div>
   );
 }
