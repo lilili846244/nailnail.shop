@@ -100,6 +100,8 @@ export default function About() {
         </Col>
       </Row>
 
+      <ReactYouTubeExample />
+
       <Container
         style={{
           background: "#fff",

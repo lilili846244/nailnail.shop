@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation, appWithTranslation } from "next-i18next";
 
 import { Navbar, Container, Nav } from "react-bootstrap";
+
 function MyApp({ Component, pageProps }) {
   const { t } = useTranslation("common");
   return (
