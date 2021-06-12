@@ -8,12 +8,12 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import "react-multi-carousel/lib/styles.css";
-import { MulitCarousel } from "../components/MultiProductCarousel";
+import { MulitProductCarousel } from "../components/MultiProductCarousel";
+import { ProductCard } from "../components/ProductCard";
+import { MulitBlogCarousel } from "../components/MultiBlogCarousel";
 
 import { GoBook } from "react-icons/go";
 import Link from "next/link";
-
-import { ProductCard } from "../components/ProductCard";
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -146,7 +146,7 @@ export default function Home() {
       </Container>
 
       <Container>
-        <MulitCarousel />
+        <MulitProductCarousel />
       </Container>
 
       <div style={{ background: "#fcf2e8", padding: "5rem 0" }}>
@@ -252,7 +252,13 @@ export default function Home() {
         </div>
       </Container>
 
-      <Container></Container>
+      <Container>
+        <div className="center">
+          <h1>Latest Blog</h1>
+          <p>There are many variations of passages of Lorem Ipsum available.</p>
+        </div>
+        <MulitBlogCarousel />
+      </Container>
     </div>
   );
 }
