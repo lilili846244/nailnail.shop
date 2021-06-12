@@ -242,14 +242,43 @@ export default function Home() {
         </Row>
       </Container>
 
-      <Container fluid>
-        <Image
-          src="http://nailnail.shop/img/banner/6.png"
-          layout="responsive"
-          width="1583"
-          height="447"
-        />
-      </Container>
+      <div>
+        <Row>
+          <Col>
+            <Image
+              src="/image/cbd_oil.png"
+              layout="intrinsic"
+              width="300px"
+              height="300px"
+            />
+          </Col>
+          <Col>
+            <div className="center">
+              <h3>Special Offers for Subscription</h3>
+              <h1>GET INSTANT DISCOUNT FOR MEMBERSHIP</h1>
+
+              <div
+                style={{
+                  borderRadius: 15,
+                  overflow: "hidden",
+                  width: "100%",
+                }}
+              >
+                <input style={{ outline: "none" }} />
+                <Button style={{ borderRadius: 15 }}> submit</Button>
+              </div>
+            </div>
+          </Col>
+          <Col>
+            <Image
+              src="/image/people.png"
+              layout="intrinsic"
+              width="300px"
+              height="300px"
+            />
+          </Col>
+        </Row>
+      </div>
 
       <Container>
         <div className="center">
