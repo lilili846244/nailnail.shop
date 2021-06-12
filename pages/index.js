@@ -85,34 +85,40 @@ export default function Home() {
       >
         <Row>
           <Col>
-            <Col>
-              <GoBook />
-            </Col>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div style={{ margin: "auto 10px", background: "#09c8" }}>
+                <GoBook />
+              </div>
 
-            <Col className="home_feature">
-              <h4>Oredr Online</h4>
-              <p>Free Shipping on Order Over $100</p>
-            </Col>
+              <div className="home_feature">
+                <h4>Oredr Online</h4>
+                <p>Free Shipping on Order Over $100</p>
+              </div>
+            </div>
           </Col>
 
-          <Col className="ltn-feature">
-            <Col className="icon">
-              <GoBook />
-            </Col>
-            <Col className="home_feature">
-              <h4>Worldwide Shipping</h4>
-              <p>24/7 h Customer Support</p>
-            </Col>
+          <Col>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div style={{ margin: "auto 10px", background: "#09c8" }}>
+                <GoBook />
+              </div>
+              <div className="home_feature">
+                <h4>Worldwide Shipping</h4>
+                <p>24/7 h Customer Support</p>
+              </div>
+            </div>
           </Col>
 
-          <Col className="ltn-feature">
-            <Col className="icon">
-              <GoBook />
-            </Col>
-            <Col className="home_feature">
-              <h4>Payment System</h4>
-              <p>Secure Payment System</p>
-            </Col>
+          <Col>
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              <div style={{ margin: "auto 10px", background: "#09c8" }}>
+                <GoBook />
+              </div>
+              <div className="home_feature">
+                <h4>Payment System</h4>
+                <p>Secure Payment System</p>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
@@ -243,13 +249,6 @@ export default function Home() {
           width="1583"
           height="447"
         />
-      </Container>
-
-      <Container className="pt-5">
-        <div className="center">
-          <h1>Latest Blog</h1>
-          <p>There are many variations of Lorem Ipsum available</p>
-        </div>
       </Container>
 
       <Container>

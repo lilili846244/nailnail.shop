@@ -26,7 +26,7 @@ const responsive = {
   },
 };
 
-export const MulitCarousel = () => {
+export const MulitProductCarousel = () => {
   return (
     <Carousel responsive={responsive}>
       <ProductCard />
