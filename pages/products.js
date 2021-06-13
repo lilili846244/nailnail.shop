@@ -52,55 +52,57 @@ export default function Products() {
       </div>
 
       <Container>
-        <Col xs={4} style={{ background: "0005" }}>
-          1
-        </Col>
-        <Col xs={8} style={{ background: "0005" }}>
-          <Row>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-            <Col>
-              <ProductCard />
-            </Col>
-          </Row>
-        </Col>
+        <Row>
+          <Col xs={4} style={{ background: "0005" }}>
+            <div style={{ background: "pink", width: 100, height: 100 }}></div>
+          </Col>
+          <Col xs={8} style={{ background: "0005" }}>
+            <Row>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+              <Col>
+                <ProductCard />
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
