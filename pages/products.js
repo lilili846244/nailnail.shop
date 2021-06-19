@@ -1,7 +1,11 @@
+import React from "react";
 import Head from "next/head";
 import { Container, Image, Row, Col } from "react-bootstrap";
 
 import { ProductCard } from "../components/ProductCard";
+import { ProductCategoriesCard } from "../components/ProductCategoriesCard";
+import { SearchObjectsCard } from "../components/SearchObjectsCard";
+import { TopRatedProductCard } from "../components/TopRatedProductCard";
 
 export default function Products() {
   return (
@@ -28,10 +32,10 @@ export default function Products() {
                   fontWeight: 700,
                 }}
               >
-                Shop Left Sidebar
+                Products
               </h1>
               <div>
-                <a href="/"> Home</a> {">"} Shop Left Sidebar
+                <a href="/"> Home</a> {">"} Products
               </div>
             </Col>
             <Col
@@ -53,8 +57,10 @@ export default function Products() {
 
       <Container>
         <Row>
-          <Col xs={4} style={{ background: "0005" }}>
-            <div style={{ background: "pink", width: 100, height: 100 }}></div>
+          <Col>
+            <ProductCategoriesCard />
+            <SearchObjectsCard />
+            <TopRatedProductCard />
           </Col>
           <Col xs={8} style={{ background: "0005" }}>
             <Row>

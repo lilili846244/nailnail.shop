@@ -29,6 +29,7 @@ const data = {
   },
 };
 export default function About() {
+  console.log(Object.keys(data));
   const [year, setYear] = useState(Object.keys(data)[0]);
   return (
     <div>
@@ -203,6 +204,8 @@ export default function About() {
         style={{
           background: "#fff",
           boxShadow: "0px 10px 20px rgba(0,0,0,0.3)",
+          marginTop: -50,
+          marginBottom: 50,
         }}
       >
         <Row>
